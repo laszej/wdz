@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import DeleteItem from './DeleteItem';
+import DeleteItem from './Deleteitem';
 
 const MyComponent = () => {
   const [items, setItems] = useState(['item 1', 'item 2', 'item 3']);
