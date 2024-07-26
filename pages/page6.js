@@ -1,6 +1,6 @@
 import React from 'react';
 import ManageContent from '../components/ManageContent';
-import DeleteItem from '../components/DeleteItem';
+import DeleteItem from '../components/Deleteitem';
 import MyComponent from '../components/MyComponent';
 
 const Page6 = () => {
