@@ -67,7 +67,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Kruk Halina Maria</strong>
             <p>radna Rady Osiedla Nowe Winogrady Północ, <b>Wiceprzewodnicząca Rady</b></p>
-            <img src="/projects/kruk.png" className={styles.pImages} />
+            <img src="/projects/kruk.PNG" className={styles.pImages} />
           </div>
         </div>
 
@@ -75,7 +75,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Laskowski Stanisław</strong>
             <p>radny Rady Osiedla Nowe Winogrady Północ</p>
-            <img src="/projects/laskowski.png" className={styles.pImages} />
+            <img src="/projects/laskowski.PNG" className={styles.pImages} />
           </div>
         </div>
 
@@ -83,7 +83,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Lewandowski Paweł Jan</strong>
             <p>radny Rady Osiedla Nowe Winogrady Północ</p>
-            <img src="/projects/lewandowski.png" className={styles.pImages} />
+            <img src="/projects/lewandowski.PNG" className={styles.pImages} />
           </div>
         </div>
 
@@ -91,7 +91,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Mateusz Otta</strong>
             <p>radny Rady Osiedla Nowe Winogrady Północ</p>
-            <img src="/projects/otta.png" className={styles.pImages} />
+            <img src="/projects/otta.PNG" className={styles.pImages} />
           </div>
         </div>
 
@@ -99,7 +99,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Paluszkiewicz Jacek</strong>
             <p>radny Rady Osiedla Nowe Winogrady Północ</p>
-            <img src="/projects/paluszkiewicz.png" className={styles.pImages} />
+            <img src="/projects/paluszkiewicz.PNG" className={styles.pImages} />
           </div>
         </div>
 
@@ -107,7 +107,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Sobkowiak Urszula</strong>
             <p>radna Rady Osiedla Nowe Winogrady Północ, <b>Wiceprzewodnicząca Rady</b></p>
-            <img src="/projects/sobkowiak.png" className={styles.pImages} />
+            <img src="/projects/sobkowiak.PNG" className={styles.pImages} />
           </div>
         </div>
 
@@ -115,7 +115,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Walkowiak Rafał Adam</strong>
             <p>radny Rady Osiedla Nowe Winogrady Północ, <b>Przewodniczący Rady</b></p>
-            <img src="/projects/walkowiak.png" className={styles.pImages} />
+            <img src="/projects/walkowiak.PNG" className={styles.pImages} />
           </div>
         </div>
 
@@ -123,7 +123,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Wielgosz Małgorzata Grażyna</strong>
             <p>radna Rady Osiedla Nowe Winogrady Północ</p>
-            <img src="/projects/wielgosz.png" className={styles.pImages} />
+            <img src="/projects/wielgosz.PNG" className={styles.pImages} />
           </div>
         </div>
 
@@ -131,7 +131,7 @@ function Vanilla() {
           <div className={styles.projects}>
             <strong>Witczak Emil</strong>
             <p>radny Rady Osiedla Nowe Winogrady Północ</p>
-            <img src="/projects/witczak.png" className={styles.pImages} />
+            <img src="/projects/witczak.PNG" className={styles.pImages} />
           </div>
         </div>
       </div>
