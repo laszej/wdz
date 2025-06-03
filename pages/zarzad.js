@@ -28,7 +28,12 @@ function ReactNext() {
 
   const refs = [
     useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
+    useRef(null),
   ];
+
 
   const [isVisible, setIsVisible] = useState(Array(refs.length).fill(false));
 
@@ -60,24 +65,47 @@ function ReactNext() {
   return (
     <>
       <div className={styles.projectsContainer}>
-    <div className={`${styles.projectsWrapper} ${isVisible[0] ? styles["is-visible"] : ""}`}ref={refs[0]}
-        >
+   
+      <div className={`${styles.projectsWrapper} ${isVisible[0] ? styles["is-visible"] : ""}`} ref={refs[0]}>
           <div className={styles.projects}>
-            <p>
-              <strong>Kryptowaluty</strong>
-              <br />
-              <br />
-             Aplikacja, która pobiera obszerne dane dotyczące wiodących kryptowalut i na bieżąco je uaktualnia.
-            </p>
-            Przetestuj
-            <Link href="https://laszej.github.io/krypto/" target="blank">
-              <strong> tutaj</strong>
-              <br />
-              <br />
-            </Link>
-            <img src={"/projects/krypto.PNG"} className={styles.pImages} />
+            <strong>Lawiński Kacper</strong>
+            <p>członek Zarządu</p>
+            <img src="/projects/lawinski.PNG" className={styles.pImages} />
           </div>
         </div>
+
+        <div className={`${styles.projectsWrapper} ${isVisible[1] ? styles["is-visible"] : ""}`} ref={refs[1]}>
+          <div className={styles.projects}>
+            <strong>Lewandowski Paweł Jan</strong>
+            <p>członek Zarządu</p>
+            <img src="/projects/lewandowski.PNG" className={styles.pImages} />
+          </div>
+        </div>
+
+        <div className={`${styles.projectsWrapper} ${isVisible[2] ? styles["is-visible"] : ""}`} ref={refs[2]}>
+          <div className={styles.projects}>
+            <strong>Otta Mateusz</strong>
+            <p>Przewodniczący Zarządu Osiedla</p>
+            <img src="/projects/otta.PNG" className={styles.pImages} />
+          </div>
+        </div>
+        <div className={`${styles.projectsWrapper} ${isVisible[3] ? styles["is-visible"] : ""}`} ref={refs[3]}>
+          <div className={styles.projects}>
+            <strong>Paluszkiewicz Jacek</strong>
+            <p>Wiceprzewodniczący Zarządu Osiedla</p>
+            <img src="/projects/paluszkiewicz.PNG" className={styles.pImages} />
+          </div>
+        </div>
+        <div className={`${styles.projectsWrapper} ${isVisible[4] ? styles["is-visible"] : ""}`} ref={refs[4]}>
+          <div className={styles.projects}>
+            <strong>Wielgosz Małgorzata Grażyna</strong>
+            <p>Wiceprzewodnicząca Zarządu Osiedla</p>
+            <img src="/projects/wielgosz.PNG" className={styles.pImages} />
+          </div>
+        </div>
+
+
+
 
 
       

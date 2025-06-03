@@ -89,7 +89,7 @@ function Vanilla() {
 
         <div className={`${styles.projectsWrapper} ${isVisible[3] ? styles["is-visible"] : ""}`} ref={refs[3]}>
           <div className={styles.projects}>
-            <strong>Mateusz Otta</strong>
+            <strong>Otta Mateusz</strong>
             <p>radny Rady Osiedla Nowe Winogrady Północ</p>
             <img src="/projects/otta.PNG" className={styles.pImages} />
           </div>
