@@ -12,7 +12,7 @@ export default function Home() {
     <Head>
       <title>Grupa radnych WdZ Osiedle Nowe Winogrady Północ</title>
       <link rel="icon" href="/images/favicon.ico" />
-      <meta name="description" content="programista. javascript. webdevelopment. react" />
+      <meta name="description" content="winogrady, radni, zarząd, zwycięstwa, wichrowe" />
       </Head>
 
     <div className={styles.homeMain}>
