@@ -19,6 +19,7 @@ export default function Home() {
     <div className={styles.gallery}>
     <Gallery/>
     </div>
+
     <Jumbotron/>
     
     </div>
