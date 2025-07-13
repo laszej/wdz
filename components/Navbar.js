@@ -6,7 +6,9 @@ import { useRouter } from "next/router";
 import CodeIcon from "../public/victory.svg";
 import twitter from "../public/twitter.svg";
 import facebook from "../public/facebook.svg";
-import logo from "../public/victory.svg";
+
+let string = "->Kliknij tu Mateusz<-"
+
 
 const Navbar = () => {
   const router = useRouter();
@@ -144,6 +146,11 @@ const Navbar = () => {
                   <li>
                     <Link href="/admin/editor" className="dropdown-item">
                       Dodaj artykuł
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/admin/takealook" className="dropdown-item">
+                     {string}
                     </Link>
                   </li>
                 </ul>

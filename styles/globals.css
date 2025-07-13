@@ -24,6 +24,32 @@ body {
   
 }
 
+.charts {
+  padding: 0 10%; /* 10% paddingu po bokach dla wszystkich urządzeń */
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  min-width: 100vmin;
+
+}
+
+/* Mobile first - 1 kolumna */
+.charts {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+/* Desktop - 3 kolumny */
+@media (min-width: 768px) {
+  .charts {
+    display:flex;
+    flex-direction:row;
+    justify-content: space-between;
+  }
+}
+
 main {
   margin-bottom: 5rem; /* set the margin bottom equal to the height of the footer */
 }
