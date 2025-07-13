@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 
-const Gallery = () => {
+const Gallery1 = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -11,9 +11,8 @@ const Gallery = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // 3 sekundy
-    fade: true,
-    arrows: false,
+    autoplaySpeed: 3000, // 3 second intervals
+    fade: true
   };
 
   const photos = [
@@ -27,26 +26,22 @@ const Gallery = () => {
     { path: "/carousel/8.jpg" },
   ];
 
+
   return (
-    <Slider {...settings}>
+    <Slider {...settings} arrows={false}>
       {photos.map((photo) => (
         <div key={photo.path}>
-          <div
-            className="galleryPhoto"
-            style={{ position: "relative", width: "100%", height: "400px" }}
-          >
-            <Image
-              src={photo.path}
-              alt="carousel image"
-              layout="fill"
-              objectFit="cover"
-              priority // szybkie ładowanie pierwszego obrazka
-            />
+          <div className="galleryPhoto">
+            <Image src={photo.path} alt="image" layout="fill" objectFit="cover" {...photo} />
           </div>
         </div>
       ))}
     </Slider>
   );
+};
+
+const Gallery = () => {
+  return <Gallery1 />;
 };
 
 export default Gallery;

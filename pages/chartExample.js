@@ -35,7 +35,7 @@ const chartExample = () => {
   ];
 
   const pieData = [
-    { name: 'Grupa Wernera/lokalne sprzedawczyki', value: 7, color: 'red' },
+    { name: 'pozostali', value: 7, color: 'red' },
     { name: 'Wichrowe do Zwycięstwa', value: 8, color: 'blue' },
   ];
 
