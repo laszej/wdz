@@ -16,14 +16,15 @@ const Gallery1 = () => {
   };
 
   const photos = [
-    { path: "/carousel/1.jpg" },
-    { path: "/carousel/2.jpg" },
-    { path: "/carousel/3.jpg" },
-    { path: "/carousel/4.jpg" },
-    { path: "/carousel/5.jpg" },
-    { path: "/carousel/6.jpg" },
-    { path: "/carousel/7.jpg" },
-    { path: "/carousel/8.jpg" },
+    { path: "public/carousel/1.jpg" },
+    { path: "public/carousel/2.jpg" },
+    { path: "public/carousel/1.jpg" },
+    { path: "public/carousel/2.jpg" },
+    { path: "public/carousel/1.jpg" },
+    { path: "public/carousel/2.jpg" },
+    { path: "public/carousel/1.jpg" },
+    { path: "public/carousel/2.jpg" },
+  
   ];
 
   return (
