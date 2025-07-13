@@ -3,7 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Image from "next/image";
 
-const Gallery1 = () => {
+const Gallery = () => {
   const settings = {
     dots: true,
     infinite: true,
@@ -11,37 +11,42 @@ const Gallery1 = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000, // 3 second intervals
-    fade: true
+    autoplaySpeed: 3000, // 3 sekundy
+    fade: true,
+    arrows: false,
   };
 
   const photos = [
-    { path: "public/carousel/1.jpg" },
-    { path: "public/carousel/2.jpg" },
-    { path: "public/carousel/1.jpg" },
-    { path: "public/carousel/2.jpg" },
-    { path: "public/carousel/1.jpg" },
-    { path: "public/carousel/2.jpg" },
-    { path: "public/carousel/1.jpg" },
-    { path: "public/carousel/2.jpg" },
-  
+    { path: "/carousel/1.jpg" },
+    { path: "/carousel/2.jpg" },
+    { path: "/carousel/3.jpg" },
+    { path: "/carousel/4.jpg" },
+    { path: "/carousel/5.jpg" },
+    { path: "/carousel/6.jpg" },
+    { path: "/carousel/7.jpg" },
+    { path: "/carousel/8.jpg" },
   ];
 
   return (
-    <Slider {...settings} arrows={false}>
+    <Slider {...settings}>
       {photos.map((photo) => (
         <div key={photo.path}>
-          <div className="galleryPhoto">
-            <Image src={photo.path} alt="image" layout="fill" objectFit="cover" {...photo} />
+          <div
+            className="galleryPhoto"
+            style={{ position: "relative", width: "100%", height: "400px" }}
+          >
+            <Image
+              src={photo.path}
+              alt="carousel image"
+              layout="fill"
+              objectFit="cover"
+              priority // szybkie ładowanie pierwszego obrazka
+            />
           </div>
         </div>
       ))}
     </Slider>
   );
-};
-
-const Gallery = () => {
-  return <Gallery1 />;
 };
 
 export default Gallery;
