@@ -8,6 +8,7 @@ export default function RecommendationsPage() {
       <ul>
         <li><Link href="/chartExample">Stary wykres wyników wyborów</Link></li>
         <li><Link href="/anotherchart">anotherchart</Link></li>
+                        
         <li><Link href="/another">pozniej dodam</Link></li>
         <li><Link href="/another">pozniej dodam</Link></li>
       </ul>

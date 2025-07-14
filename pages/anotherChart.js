@@ -35,7 +35,7 @@ const chartExample = () => {
   ];
 
   const pieData = [
-    { name: 'pozostali', value: 7, color: 'red' }, // ZMIANA
+    { name: 'pozostali', value: 6, color: 'red' }, // ZMIANA
     { name: 'Wichrowe do Zwycięstwa', value: 9, color: 'blue' }, // ZMIANA
   ];
 
