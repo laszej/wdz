@@ -51,7 +51,7 @@ export default function PostEditor({ onSuccess = () => {} }) {
         onChange={(e) => setSlug(e.target.value)}
         required
         style={{ width: '100%', padding: '0.5rem', marginBottom: '1rem' }}
-        placeholder="to będzie tytuł podstrony, więc zgodnie z tematyką wydarzenia"
+        placeholder="krótko tematyka wydarzenia"
       />
 
       <label>Treść:</label>

@@ -12,11 +12,11 @@ import {
   Legend,
 } from 'recharts';
 
-const anotherChart = () => {
+const chartExample = () => {
   const data = [
     { name: 'Marcin Zaremba', głosy: 337, id: 'red' },
-    { name: 'Marcin Werner', głosy: 304, id: 'red' },
-    { name: 'Maria Kruk', głosy: 289, id: 'red' },
+    { name: 'Bartosz Werner', głosy: 304, id: 'red' },
+    { name: 'Maria Kruk', głosy: 289, id: 'blue' }, // ZMIANA
     { name: 'Sandra Kasprzak', głosy: 254, id: 'red' },
     { name: 'Emil Witczak', głosy: 114, id: 'blue' },
     { name: 'Stanisław Laskowski', głosy: 113, id: 'blue' },
@@ -35,81 +35,84 @@ const anotherChart = () => {
   ];
 
   const pieData = [
-    { name: 'Grupa Wernera/lokalne sprzedawczyki', value: 7, color: 'red' },
-    { name: 'Wichrowe do Zwycięstwa', value: 8, color: 'blue' },
+    { name: 'pozostali', value: 7, color: 'red' }, // ZMIANA
+    { name: 'Wichrowe do Zwycięstwa', value: 9, color: 'blue' }, // ZMIANA
   ];
 
   return (
- <>
-
-    <h1 style={{padding: "3, 1, 1 ,1 ", textAlign: "center", marginTop: "2rem"}}> Wyniki wyborów do Rady Osiedla Nowe Winogrady Północ (2024 - 2029 r.)</h1>
-      <div className ="charts">
-  
-
-
-          <div>
-            <PieChart width={400} height={400}>
-              <Pie
-                data={pieData}
-                dataKey="value"
-                nameKey="name"
-                cx="50%"
-                cy="50%"
-                outerRadius={120}
-                fill="#8884d8"
-                label
-                stroke="white"
-                strokeWidth={2}
-              >
-                {pieData.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.color} />
-                ))}
-              </Pie>
-              <Tooltip />
-              <Legend />
-            </PieChart>
-          </div>
-
-          <div>
-            <BarChart
-              width={400}
-              height={400}
-              data={data}
-              margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
+    <>
+      <h1 style={{ padding: "3rem 1rem", textAlign: "center", marginTop: "2rem" }}>
+      Obecna większość grupy WdZ+1
+      </h1>
+      <div className="charts">
+        <div>
+          <h3 style={{textAlign: "center"}}>Sumarycznie</h3>
+          <PieChart width={400} height={400}>
+            <Pie
+              data={pieData}
+              dataKey="value"
+              nameKey="name"
+              cx="50%"
+              cy="50%"
+              outerRadius={120}
+              fill="#8884d8"
+              label
+              stroke="white"
+              strokeWidth={2}
             >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="głosy" isAnimationActive={false}>
-                {data.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.id === 'blue' ? 'blue' : 'red'} />
-                ))}
-              </Bar>
-            </BarChart>
-          </div>
-
-          <div>
-            <BarChart
-              width={400}
-              height={400}
-              data={data1}
-              margin={{ top: 20, right: 30, left: 20, bottom: 5 }}
-            >
-              <CartesianGrid strokeDasharray="3 3" />
-              <XAxis dataKey="name" />
-              <YAxis />
-              <Tooltip />
-              <Bar dataKey="głosy" isAnimationActive={false}>
-                {data1.map((entry, index) => (
-                  <Cell key={`cell-${index}`} fill={entry.id === 'red' ? 'red' : 'blue'} />
-                ))}
-              </Bar>
-            </BarChart>
-          </div>
+              {pieData.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.color} />
+              ))}
+            </Pie>
+            <Tooltip />
+            <Legend />
+          </PieChart>
         </div>
-        </>
+
+        <div>
+        <h3 style={{textAlign: "center"}}>os. Wichrowe Wzgórze</h3>
+          <BarChart
+            width={400}
+            height={400}
+            data={data1}
+            margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" interval={0} angle={-45} textAnchor="end" /> {/* ZMIANA */}
+            <YAxis />
+            <Tooltip />
+            <Bar dataKey="głosy" isAnimationActive={false}>
+              {data1.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.id === 'red' ? 'red' : 'blue'} />
+              ))}
+            </Bar>
+          </BarChart>
+        </div>
+
+        <div>
+        <h3 style={{textAlign: "center"}}>os. Zwycięstwa</h3>
+          <BarChart
+            width={400}
+            height={400}
+            data={data}
+            margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
+          >
+            <CartesianGrid strokeDasharray="3 3" />
+            <XAxis dataKey="name" interval={0} angle={-45} textAnchor="end" /> {/* ZMIANA */}
+            <YAxis />
+            <Tooltip />
+            <Bar dataKey="głosy" isAnimationActive={false}>
+              {data.map((entry, index) => (
+                <Cell key={`cell-${index}`} fill={entry.id === 'blue' ? 'blue' : 'red'} />
+              ))}
+            </Bar>
+          </BarChart>
+        </div>
+
+        
+      </div>
+    </>
   );
 };
 
-export default anotherChart;
+export default chartExample;

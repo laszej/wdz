@@ -111,21 +111,21 @@ const Navbar = () => {
                 data-bs-toggle="dropdown"
                 style={{ background: "transparent", border: "none", color: "#fff" }}
               >
-                Osiedle 
+                WdZ w Radzie i Zarządzie 
               </button>
               <ul className="dropdown-menu dropdown-menu-dark bg-dark-custom">
                 <li>
                   <Link href="/radni" className="dropdown-item">
-                    radni
+                    nasi członkowie
                   </Link>
                 </li>
-                <li>
-                  <Link href="/zarzad" className="dropdown-item">
-                    Zarząd
-                  </Link>
-                </li>
+
+               
+             
               </ul>
-            </li>
+
+              </li>
+              
 
             {/* Dropdown: Admin (tylko gdy zalogowany) */}
             {isLoggedIn && (
