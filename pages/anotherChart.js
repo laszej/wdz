@@ -12,11 +12,11 @@ import {
   Legend,
 } from 'recharts';
 
-const anotherchart = () => {
+const AnotherChart = () => {
   const data = [
     { name: 'Marcin Zaremba', głosy: 337, id: 'red' },
     { name: 'Bartosz Werner', głosy: 304, id: 'red' },
-    { name: 'Maria Kruk', głosy: 289, id: 'blue' }, // ZMIANA
+    { name: 'Maria Kruk', głosy: 289, id: 'blue' },
     { name: 'Sandra Kasprzak', głosy: 254, id: 'red' },
     { name: 'Emil Witczak', głosy: 114, id: 'blue' },
     { name: 'Stanisław Laskowski', głosy: 113, id: 'blue' },
@@ -35,18 +35,18 @@ const anotherchart = () => {
   ];
 
   const pieData = [
-    { name: 'pozostali', value: 6, color: 'red' }, // ZMIANA
-    { name: 'Wichrowe do Zwycięstwa', value: 9, color: 'blue' }, // ZMIANA
+    { name: 'pozostali', value: 6, color: 'red' },
+    { name: 'Wichrowe do Zwycięstwa', value: 9, color: 'blue' },
   ];
 
   return (
     <>
       <h1 style={{ padding: "3rem 1rem", textAlign: "center", marginTop: "2rem" }}>
-      Obecna większość grupy WdZ+1
+        Obecna większość grupy WdZ+1
       </h1>
       <div className="charts">
         <div>
-          <h3 style={{textAlign: "center"}}>Sumarycznie</h3>
+          <h3 style={{ textAlign: "center" }}>Sumarycznie</h3>
           <PieChart width={400} height={400}>
             <Pie
               data={pieData}
@@ -70,7 +70,7 @@ const anotherchart = () => {
         </div>
 
         <div>
-        <h3 style={{textAlign: "center"}}>os. Wichrowe Wzgórze</h3>
+          <h3 style={{ textAlign: "center" }}>os. Wichrowe Wzgórze</h3>
           <BarChart
             width={400}
             height={400}
@@ -78,7 +78,7 @@ const anotherchart = () => {
             margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
           >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" interval={0} angle={-45} textAnchor="end" /> {/* ZMIANA */}
+            <XAxis dataKey="name" interval={0} angle={-45} textAnchor="end" />
             <YAxis />
             <Tooltip />
             <Bar dataKey="głosy" isAnimationActive={false}>
@@ -90,7 +90,7 @@ const anotherchart = () => {
         </div>
 
         <div>
-        <h3 style={{textAlign: "center"}}>os. Zwycięstwa</h3>
+          <h3 style={{ textAlign: "center" }}>os. Zwycięstwa</h3>
           <BarChart
             width={400}
             height={400}
@@ -98,7 +98,7 @@ const anotherchart = () => {
             margin={{ top: 20, right: 30, left: 20, bottom: 60 }}
           >
             <CartesianGrid strokeDasharray="3 3" />
-            <XAxis dataKey="name" interval={0} angle={-45} textAnchor="end" /> {/* ZMIANA */}
+            <XAxis dataKey="name" interval={0} angle={-45} textAnchor="end" />
             <YAxis />
             <Tooltip />
             <Bar dataKey="głosy" isAnimationActive={false}>
@@ -108,11 +108,9 @@ const anotherchart = () => {
             </Bar>
           </BarChart>
         </div>
-
-        
       </div>
     </>
   );
 };
 
-export default anotherchart;
+export default AnotherChart;
