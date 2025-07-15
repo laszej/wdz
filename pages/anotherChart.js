@@ -12,7 +12,7 @@ import {
   Legend,
 } from 'recharts';
 
-const chartExample = () => {
+const anotherchart = () => {
   const data = [
     { name: 'Marcin Zaremba', głosy: 337, id: 'red' },
     { name: 'Bartosz Werner', głosy: 304, id: 'red' },
