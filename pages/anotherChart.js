@@ -12,7 +12,7 @@ import {
   Legend,
 } from 'recharts';
 
-const AnotherChart = () => {
+const anotherChart = () => {
   const data = [
     { name: 'Marcin Zaremba', głosy: 337, id: 'red' },
     { name: 'Bartosz Werner', głosy: 304, id: 'red' },
@@ -107,10 +107,11 @@ const AnotherChart = () => {
               ))}
             </Bar>
           </BarChart>
+          
         </div>
       </div>
     </>
   );
 };
 
-export default AnotherChart;
+export default anotherChart;
