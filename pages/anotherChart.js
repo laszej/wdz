@@ -115,4 +115,4 @@ const chartExample = () => {
   );
 };
 
-export default chartExample;
+export default anotherchart;
