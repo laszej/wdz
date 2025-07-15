@@ -15,6 +15,7 @@ export default function RecommendationsPage() {
         <li><Link href="/another">pozniej dodam</Link></li>
         <li><Link href="/another">pozniej dodam</Link></li>
         <li><Link href="/another">pozniej dodam</Link></li>
+        <li><Link href="/another">pozniej dodam</Link></li>
       </ul>
     </div>
   );
